@@ -1,0 +1,30 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* 100% of viewport height */
+}
+
+.center-table {
+    width: 80%; /* or any width you prefer */
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.center-table th, .center-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.center-table th {
+    background-color: rgb(255, 255, 255);
+}

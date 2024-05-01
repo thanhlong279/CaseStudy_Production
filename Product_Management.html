@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<table border="1" style="width: 500px; height: 300px" class="center-table">
+    <tr id="id1">
+        <th colspan="2"> Thông tin sản phẩm</th>
+    </tr>
+
+    <tr>
+        <th>Mã sản phẩm</th>
+        <td><input type="text" id="code"></td>
+
+    </tr>
+    <tr>
+        <th>Tên sản phẩm</th>
+        <td><input type="text" id="fullName"></td>
+    </tr>
+    <tr>
+        <th>Nhà sản xuất</th>
+        <td><input type="text" id="made"></td>
+    </tr>
+    <tr>
+        <th>Model</th>
+        <td><input type="text" id="model"></td>
+    </tr>
+    <tr>
+        <th>Tình trạng máy</th>
+        <td><input type="text" id="status"></td>
+    </tr>
+    <tr>
+        <th>Giá bán</th>
+        <td><input type="text" id="price"></td>
+    </tr>
+    <tr>
+        <th>Khuyến mại</th>
+        <td><input type="text" id="promotion"></td>
+    </tr>
+    <tr>
+        <th>Tồn kho</th>
+        <td><input type="text" id="inventory"></td>
+    </tr>
+    <tr>
+        <th></th>
+        <td>
+            <button style="background-color: limegreen" id="add" onclick="addProduct()">Add</button>
+            <button style="background-color: gold" id="edit" onclick="updateProduct()">Save</button>
+        </td>
+    </tr>
+</table>
+<table style=" border: 1px solid black; width: 1000px" class="center-table">
+    <tr>
+        <th style="font-size: 40px" colspan="8">List Product</th>
+    </tr>
+    <tr>
+        <th>Mã sản phẩm</th>
+        <th>Tên sản phẩm</th>
+        <th>Nhà sản xuất</th>
+        <th>Model</th>
+        <th>Tình trạng máy</th>
+        <th>Giá bán</th>
+        <th>Khuyến mại</th>
+        <th>Tồn kho</th>
+    </tr>
+    <tbody id="list-Product">
+    </tbody>
+</table>
+<script src="Production_Management.js"></script>
+<script src="Product.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
